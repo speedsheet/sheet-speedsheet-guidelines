@@ -1,0 +1,85 @@
+# SpeedSheet Guidelines
+
+This is a work in progress (duh!). Expect it to be overly general and overly sparce, disorganized and lacking in useful information. But also expect it to evolve over time.
+
+
+
+# Document Guidelines
+
+Keep speedsheets to the point.
+Less is more!
+
+
+
+# General layout
+
+Recommended Sections:
+
+<card>\# Summary
+
+\# Concepts
+
+\# Functions
+
+\# How To
+
+\# References
+
+\# Glossary / Terms<>
+
+
+
+# Entry Guidelines
+
+Less is more!
+Capture most important cases (don't be exhaustive).
+
+
+
+## Software Library References
+
+Each entry should have most of these elements:
+
+<*>First Item Should Be The Basic Form
+Add Additional Forms If Important<>
+
+<*>State the Return Type (if not obvious)<>
+
+<*>1 Line Description - What It Is / Does.
+Detailed Description<>
+
+<*>Add Tags For Related Words<>
+
+
+
+## Tips
+
+Include full library paths and namespaces.
+
+Examples should be complete, and runnable by copy and pasting.
+Examples should be minimal and focus on the problem (don't make me think).
+Examples should show the result.
+
+If there are multiple use cases, split into separate entries (more is better).
+
+
+## Example
+
+Numpy - Stack:
+<l>https://speedsheet.io/s/numpy?search=stack&select=a4sa<>
+
+
+## Format
+
+Entry Elements:
+
+<card><*># Section Name
+Simple Form
+Additional Forms
+Return Type
+What It Is (One Line)
+Details
+Examples
+\@ Tags<><>
+
+
