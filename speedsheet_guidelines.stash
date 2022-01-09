@@ -1,6 +1,6 @@
 # SpeedSheet Guidelines
 
-This is a work in progress (duh!). Expect it to be overly general and overly sparce, disorganized and lacking in useful information. But also expect it to evolve over time.
+This is a work in progress (doh!). Expect it to be overly general and overly sparce, disorganized and lacking in useful information. But also expect it to evolve over time.
 
 
 
@@ -40,12 +40,13 @@ Capture most important cases (don't be exhaustive).
 
 Each entry should have most of these elements:
 
-<*>First Item Should Be The Basic Form
-Add Additional Forms If Important<>
+<*>Very Basic Form First
+Full / Additional Forms Next
+Include Library and Namespace Imports<>
 
 <*>State the Return Type (if not obvious)<>
 
-<*>1 Line Description - What It Is / Does.
+<*>1 Line Description (What It Is / Does)
 Detailed Description<>
 
 <*>Add Tags For Related Words<>
@@ -63,10 +64,88 @@ Examples should show the result.
 If there are multiple use cases, split into separate entries (more is better).
 
 
-## Example
 
-Numpy - Stack:
-<l>https://speedsheet.io/s/numpy?search=stack&select=a4sa<>
+## Examples
+
+
+### Python Code Example
+
+#### Date - Create
+
+<cb>= date(<v>year<>, <v>month<>, <v>day<>)<>
+
+Usage:
+
+<cb>from datetime import date
+
+= date.today()
+= date(<v>year<>, <v>month<>, <v>day<>)<>
+
+Returns:
+
+<cb>date<>
+
+
+Returns an instance of Date representing the year, month and day.
+
+
+Example:
+
+<cb>from datetime import date
+
+<v>date_1<> = date.today()
+<v>date_2<> = date(<v>2000<>, <v>1<>, <v>2<>)
+
+print("Today ", <v>date_1<>)
+print("Date-2", <v>date_2<>)
+
+<#># Prints:
+\#
+\#    Today  2020-01-01
+\#    Date-2 2000-01-02<><>
+<s>@
+\@ date-only, dates-only, .today(), .date(), datetime.date, date.
+\@ create, define, instantiate, new, now, current, data type<>
+
+
+### Rust Code Example
+
+
+#### HashMap - Create
+
+<cb>= HashMap::new()<>
+
+Usage:
+
+<cb>use std::collections::HashMap;
+
+let mut <v>hashmap_1<>\<<v>K<>,<v>V<>> = HashMap::new();<>
+
+Returns:
+
+<cb>HashMap\<<v>Key<>, <v>Value<>><>
+
+
+Creates an instance of HashMap.
+
+
+Example:
+
+<cb>use std::collections::HashMap;
+
+let mut <v>hashmap_1<> = HashMap::new();
+
+<v>hashmap_1<>.insert("<v>one<>", "<v>Value 1<>");
+<v>hashmap_1<>.insert("<v>two<>", "<v>Value 2<>");
+
+let <v>value<> = &<v>hashmap_1<>.get(&"<v>one<>");
+
+println!("{}", <v>value<>.unwrap());
+
+<#>// Prints: "Value 1"<><>
+<s>@
+\@ new, define, instantiate
+\@ hashmap::new(), new()<>
 
 
 ## Format
